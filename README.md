@@ -184,6 +184,6 @@ Deployed using **Hugging Face Spaces (Docker SDK)**.
 
 ## 👨‍💻 Author
 
-Created and Developed Kalyan as part of the **Meta x PyTorch OpenEnv Hackathon**
+Created and Developed by Kalyan as part of the **Meta x PyTorch OpenEnv Hackathon**
 
 ---
