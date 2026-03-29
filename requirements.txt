@@ -3,6 +3,7 @@ annotated-types==0.7.0
 anyio==4.13.0
 bandit==1.9.4
 certifi==2026.2.25
+charset-normalizer==3.4.6
 click==8.3.1
 distro==1.9.0
 fastapi==0.135.2
@@ -22,6 +23,7 @@ pydantic_core==2.41.5
 Pygments==2.19.2
 pytest==9.0.2
 PyYAML==6.0.3
+requests==2.33.0
 rich==14.3.3
 sniffio==1.3.1
 starlette==1.0.0
@@ -29,4 +31,5 @@ stevedore==5.7.0
 tqdm==4.67.3
 typing-inspection==0.4.2
 typing_extensions==4.15.0
+urllib3==2.6.3
 uvicorn==0.42.0
