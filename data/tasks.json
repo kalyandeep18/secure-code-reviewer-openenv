@@ -1,0 +1,47 @@
+[
+    {
+        "id": "task_easy_1",
+        "difficulty": "easy",
+        "vulnerability_type": "hardcoded_secret",
+        "vulnerable_code": "api_key = \"12345SECRET\"",
+        "expected_fix": "use_env_variable",
+        "test_cases": [
+            "check_no_hardcoded_secret",
+            "check_env_usage"
+        ],
+        "context": {
+            "file": "config.py",
+            "line": 1
+        }
+    },
+    {
+        "id": "task_medium_1",
+        "difficulty": "medium",
+        "vulnerability_type": "sql_injection",
+        "vulnerable_code": "query = f\"SELECT * FROM users WHERE name = '{username}'\"",
+        "expected_fix": "parameterized_query",
+        "test_cases": [
+            "check_no_fstring",
+            "check_parameterized_query"
+        ],
+        "context": {
+            "file": "db.py",
+            "line": 10
+        }
+    },
+    {
+        "id": "task_hard_1",
+        "difficulty": "hard",
+        "vulnerability_type": "insecure_deserialization",
+        "vulnerable_code": "import pickle\ndata = pickle.load(file)",
+        "expected_fix": "safe_deserialization",
+        "test_cases": [
+            "check_no_pickle",
+            "check_safe_method"
+        ],
+        "context": {
+            "file": "loader.py",
+            "line": 5
+        }
+    }
+]
