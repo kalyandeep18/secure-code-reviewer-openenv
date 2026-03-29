@@ -1,0 +1,24 @@
+name: secure-code-reviewer
+version: 0.1.0
+
+description: >
+  An OpenEnv environment for training AI agents to detect and fix
+  real-world security vulnerabilities in code.
+
+entrypoint: server.app:app
+
+tasks:
+  - id: easy
+    description: Fix hardcoded secrets in code
+  - id: medium
+    description: Fix SQL injection vulnerabilities
+  - id: hard
+    description: Fix insecure deserialization issues
+
+endpoints:
+  - /reset
+  - /step
+  - /state
+  - /tasks
+  - /grader
+  - /baseline
