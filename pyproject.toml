@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secure-code-reviewer"
+version = "0.1.0"
+description = "OpenEnv environment for training agents to fix security vulnerabilities in code"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "requests",
+  "openai",
+  "openrouter",
+  "httpx",
+  "bandit",
+]
+
+[tool.setuptools]
+packages = []
